@@ -1,0 +1,116 @@
+---
+layout: page
+title: "HueFill: Rainbow & Gradient Text for Google Docs™ — Privacy Policy"
+permalink: /privacy/huefill/
+---
+
+# HueFill: Rainbow & Gradient Text for Google Docs™ — Privacy Policy
+
+Last updated: 10 November 2026
+
+HueFill is an add-on for Google Docs™ that colours the text you select: a rainbow, a gradient of your
+own colours, or your colours in turn. This policy says what it does with data, including the Google
+user data it receives.
+
+## What Google user data HueFill accesses
+
+- **The document you use it in** (scope `documents.currentonly`). HueFill reads the text you select,
+  to find its letters and words, and sets their text or highlight colour and, if you ask for growing
+  letters, their font size. Remove colours sets the selection's text and highlight colours back to
+  the defaults. It has no access to your other documents or files.
+- **Your email address** (scope `userinfo.email`). It is how your purchase is found: HueFill looks up
+  the Stripe customer with this email and, when you start a checkout, creates one. It is also shown in
+  HueFill so you can check which Google account is used for your free colourings and purchase.
+  Google's installation screen may also say the add-on can 'associate you with your personal info on
+  Google'. That is Google's standard sign-in association; HueFill does not request, read or store your
+  profile information.
+- **Sidebars and menus** (scope `script.container.ui`), to show HueFill inside Docs™.
+- **Connections to outside services** (scope `script.external_request`), to exactly one: Stripe
+  (`api.stripe.com`), to check purchases and sell the one-time unlock.
+
+## How HueFill uses that data
+
+- **Your text** is read and coloured inside Google's Apps Script. The preview in the sidebar shows a
+  sample sentence, not your text. Your text is not stored, and not sent anywhere else.
+- **Your settings** (your purchase status and your Stripe customer number) are kept in your own Google
+  account's storage for the add-on, with a mark that the deletion described under CaptionFill below
+  has been done.
+- **Free allowance records**, in the same account storage, keep how many of your free colourings are
+  spent. The latest one adds a random identifier, a one-way fingerprint made from the document's ID and
+  a random value, its status and its number of letters, so that a retry is not counted twice. No
+  document text is stored in these records.
+- **A count of your runs**: once HueFill is on the Marketplace, your account storage counts your
+  colourings, so that after a few it can ask you, once, whether you would review it. It is used for
+  nothing else.
+- **CaptionFill**: HueFill takes the place of CaptionFill on the same Google Workspace Marketplace
+  listing. The first time HueFill opens for your account, everything CaptionFill kept in your
+  account's storage is deleted: its free allowance records, its count of your runs and its billing
+  cache.
+- **Payments** are made on Stripe's checkout page. Stripe receives your email, card and billing
+  address; HueFill never sees your card. We can see in Stripe your email, your billing country and
+  your purchase, which we need to provide the service and to account for tax. Stripe's
+  [Privacy Policy](https://stripe.com/privacy) applies.
+
+HueFill uses Google user data only for the features above. It does not sell or rent it, does not use
+it for advertising, and passes it to no one except as those features need: your email to Stripe.
+HueFill has no servers of its own. The contents of your documents are never sent to us or to anyone
+else. HueFill uses no analytics service; it counts in its own error log how many accounts reach each
+usage step described below.
+
+HueFill does not use Google user data, including data received from Google Workspace™ APIs, to
+develop, improve or train AI or machine-learning models, generalized or personalized.
+
+HueFill's use and transfer of information received from Google APIs adheres to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements.
+
+## Who HueFill shares Google user data with
+
+- **Stripe** (our payment processor, [Privacy Policy](https://stripe.com/privacy)) receives your email
+  address, to find your purchase and, when you buy, to create your customer record and take the
+  payment. Stripe receives nothing else of your Google user data: no document content.
+- Your document never leaves Google's services.
+
+Nothing else is shared, transferred or disclosed: HueFill does not sell, rent or trade Google user
+data, and does not give it to advertisers, data brokers, analytics providers or any other third
+party. We would disclose it only if the law required us to, and only what it required.
+
+## How HueFill protects that data
+
+- **Encryption in transit.** Everything HueFill sends or receives travels over HTTPS (TLS): between
+  your browser and Google, and from Apps Script to Stripe.
+- **Encryption at rest.** Your document, HueFill's settings and its error log are stored by Google,
+  which encrypts the data it stores. Your customer record is stored by Stripe, which encrypts it too.
+- **Access controls.** HueFill runs inside Google's Apps Script, as you, with only the scopes above
+  and only in the document you open it in. We have no access to your documents or to your settings.
+  Your customer record sits in our Stripe account, which only we can sign in to. HueFill reaches
+  Stripe with a restricted key that stays on Google's servers and never reaches your browser.
+- **Never stored**: the contents of your document outside it, your card details, and your Google
+  password or sign-in tokens.
+- **Errors**: when something fails, its error message (such as a Stripe error) goes to HueFill's
+  error log in Google Cloud™, which only we can read.
+- **Usage steps**: each of these steps adds one line to the same error log, naming only HueFill and
+  the step: the sidebar opens, it opens on the Pro offer, Unlock Pro is chosen, text is coloured, a
+  colouring stops at the free allowance. The line holds no document content, colour, email address or
+  file name. Google adds to every line in the log its own key for the account, which does not name
+  you, is used only by HueFill and changes every 30 days. We use it only to count how many accounts
+  reach each step, and never link it to payments, email addresses or other records.
+
+## Keeping and deleting
+
+- The error log, usage steps included, is deleted after 30 days.
+- The colours and sizes HueFill set are part of the document and stay until you change them or delete
+  the document.
+- Free allowance records have no automatic expiry; the next counted colouring replaces the latest
+  one's record without resetting the count used.
+- Your settings and free allowance records stay in your Google account's storage for HueFill and
+  contain no document text. Uninstalling HueFill (Extensions > Add-ons > Manage add-ons) stops it;
+  removing it at https://myaccount.google.com/connections also ends its access to your account, after
+  which nothing reads them.
+- To have your data at Stripe deleted, write to us and we delete your Stripe customer. The records of
+  your payments are kept for five years after the end of the financial year they belong to, as Danish
+  bookkeeping law requires, and deleted after that.
+
+## Contact
+
+Questions about this policy or your data: [spyridwn.pd@gmail.com](mailto:spyridwn.pd@gmail.com).
